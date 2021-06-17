@@ -2,6 +2,7 @@ package lib.ui.ios;
 
 import io.appium.java_client.AppiumDriver;
 import lib.ui.ArticlePageObject;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class IOSArticlePageObject extends ArticlePageObject
 {
@@ -14,7 +15,7 @@ public class IOSArticlePageObject extends ArticlePageObject
         ARTICLE_OF_READING_LIST = "xpath://*[@resource-id='org.wikipedia:id/item_container']//*[@text='Learning programming']";
         CANCEL_BUTTON_ON_SEARCH_PAGE = "id:Cancel";
     }
-    public IOSArticlePageObject (AppiumDriver driver)
+    public IOSArticlePageObject (RemoteWebDriver driver)
     {
         super(driver);
     }

@@ -2,6 +2,7 @@ package lib.ui.ios;
 
 import io.appium.java_client.AppiumDriver;
 import lib.ui.MyListsPageObject;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class IOSMyListsPageObject extends MyListsPageObject {
     static
@@ -10,7 +11,7 @@ public class IOSMyListsPageObject extends MyListsPageObject {
         ARTICLE_IS_NOT_DELETED = "xpath://XCUIElementTypeApplication[@name='Wikipedia']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell"; //xpath://XCUIElementTypeLink[@name='Linkin Park discography Band discography']
 
     }
-    public IOSMyListsPageObject (AppiumDriver driver)
+    public IOSMyListsPageObject (RemoteWebDriver driver)
     {
         super(driver);
     }

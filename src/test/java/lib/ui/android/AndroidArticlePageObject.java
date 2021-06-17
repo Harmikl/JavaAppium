@@ -2,6 +2,7 @@ package lib.ui.android;
 
 import io.appium.java_client.AppiumDriver;
 import lib.ui.ArticlePageObject;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class AndroidArticlePageObject extends ArticlePageObject
 {
@@ -16,7 +17,7 @@ public class AndroidArticlePageObject extends ArticlePageObject
         CLOSE_ARTICLE_BUTTON = "xpath://android.widget.ImageButton[@content-desc='Navigate up']";
         ARTICLE_OF_READING_LIST = "xpath://*[@resource-id='org.wikipedia:id/item_container']//*[@text='Learning programming']";
     }
-    public AndroidArticlePageObject (AppiumDriver driver)
+    public AndroidArticlePageObject (RemoteWebDriver driver)
     {
         super(driver);
     }
