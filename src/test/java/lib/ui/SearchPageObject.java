@@ -33,7 +33,7 @@ abstract public class SearchPageObject  extends MainPageObject{
         return this.getAmountOfElement(SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION);
     }
     /*template methods*/
-    public void initSearchInput (){ //при заруске находит поиск, тапает по нужному элементу, и проверяет что инпут есть
+    public void initSearchInput () throws InterruptedException { //при заруске находит поиск, тапает по нужному элементу, и проверяет что инпут есть
         this.waitForElementAndClick (SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 5);
         this.waitForElementPresent(SEARCH_INIT_ELEMENT, "Cannot find search input after clicking search init element");
     }
@@ -87,5 +87,9 @@ abstract public class SearchPageObject  extends MainPageObject{
     public void assertThereIsNoResultOfSearch()
     {
         this.assertElementNotPresent(SEARCH_RESULT_ELEMENT, "We supposed not to find any result");
+    }
+    public void clickAuthButton() throws InterruptedException {
+        Thread.sleep(1000);
+        this.waitForElementAndClick(SEARCH_INIT_ELEMENT, "Cannot call auth menu", 10);
     }
 }

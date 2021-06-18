@@ -12,7 +12,7 @@ public class MyListsTests extends CoreTestCase
 {
 private static final String name_of_folder = "Learning programming";
     @Test
-    public void testSaveFirstArticleToMyList(){
+    public void testSaveFirstArticleToMyList()throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
@@ -42,7 +42,7 @@ private static final String name_of_folder = "Learning programming";
         MyListsPageObject.swipeByArticleToDelete(article_title);
     }
     @Test
-    public void testSaveTwoArticleToMyListEx5() {
+    public void testSaveTwoArticleToMyListEx5() throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");

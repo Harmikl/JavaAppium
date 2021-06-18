@@ -217,6 +217,9 @@ public class MainPageObject {
             throw new IllegalArgumentException("Cannot get type of locator. Locator "+locator_with_type);
         }
     }
+
+
+
 }
 
 

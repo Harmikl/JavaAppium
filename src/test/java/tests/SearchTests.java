@@ -11,15 +11,16 @@ import java.util.List;
 
 public class SearchTests extends CoreTestCase {
     @Test
-    public void testSearch() {
+    public void testSearch() throws InterruptedException {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
+        SearchPageObject.clickAuthButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.waitForSearchResult("bject-oriented programming language");
     }
 
     @Test
-    public void testCancelSearchEx3() {
+    public void testCancelSearchEx3() throws InterruptedException {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
@@ -29,7 +30,7 @@ public class SearchTests extends CoreTestCase {
     }
 
     @Test
-    public void testAmountOfNotEmptySearch() {
+    public void testAmountOfNotEmptySearch() throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         String search_line = "Linkin Park Diskography";
@@ -43,7 +44,7 @@ public class SearchTests extends CoreTestCase {
     }
 
     @Test
-    public void testAmountOfEmptySearch() {
+    public void testAmountOfEmptySearch() throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         String search_line = "cxczxx";
@@ -54,7 +55,7 @@ public class SearchTests extends CoreTestCase {
     }
 
     @Test
-    public void testCheckJavaWordInSearchResults() {
+    public void testCheckJavaWordInSearchResults() throws InterruptedException {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         String search_line = "JAVA";
@@ -74,7 +75,7 @@ public class SearchTests extends CoreTestCase {
         );
     }
         @Test
-    public void testFindMoreThan3TitleAndDescription ()
+    public void testFindMoreThan3TitleAndDescription ()throws InterruptedException
         {
             SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
             SearchPageObject.initSearchInput();
@@ -87,7 +88,7 @@ public class SearchTests extends CoreTestCase {
             );
         }
     @Test
-    public void testFindMTitleAndDescriptionByJavaRequest ()
+    public void testFindMTitleAndDescriptionByJavaRequest ()throws InterruptedException
     {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();

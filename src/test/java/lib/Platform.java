@@ -40,8 +40,7 @@ public class Platform {
             return new IOSDriver(URL,getIOSDesiredCapabilities());
         }else  if (this.isMw()){
             return new ChromeDriver(this.getMwChromeOptions());
-        }
-        else {
+        } else {
             throw new Exception("Cannot detect type of driver. Platform value "+this.getPlatformVar());
         }
     }

@@ -10,7 +10,7 @@ import org.junit.Test;
 public class ChangeAppConditionTests extends CoreTestCase
 {
     @Test
-    public void testChangesScreenOrientationOnSearchResults(){
+    public void testChangesScreenOrientationOnSearchResults() throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
@@ -38,7 +38,7 @@ public class ChangeAppConditionTests extends CoreTestCase
 
     }
     @Test
-    public void testCheckSearchArticleInBackground() {
+    public void testCheckSearchArticleInBackground() throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
