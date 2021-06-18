@@ -34,6 +34,7 @@ abstract public class SearchPageObject  extends MainPageObject{
     }
     /*template methods*/
     public void initSearchInput () throws InterruptedException { //при заруске находит поиск, тапает по нужному элементу, и проверяет что инпут есть
+        clickAuthButton();
         this.waitForElementAndClick (SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 5);
         this.waitForElementPresent(SEARCH_INIT_ELEMENT, "Cannot find search input after clicking search init element");
     }

@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93c093d2-bba6-4637-a07e-bf8fc94e8d17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwSearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ChangeAppConditionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ChangeAppConditionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MyListsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MyListsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/Platform.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/MainPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/SearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/SearchPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/mobile_web/MwSearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/mobile_web/MwSearchPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ArticleTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ArticleTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ChangeAppConditionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ChangeAppConditionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/MyListsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/MyListsTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" afterDir="false" />
-    </list>
+    <list default="true" id="93c093d2-bba6-4637-a07e-bf8fc94e8d17" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
