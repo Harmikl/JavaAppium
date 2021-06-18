@@ -34,8 +34,9 @@ abstract public class SearchPageObject  extends MainPageObject{
     }
     /*template methods*/
     public void initSearchInput () throws InterruptedException { //при заруске находит поиск, тапает по нужному элементу, и проверяет что инпут есть
-        clickAuthButton();
-        this.waitForElementAndClick (SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 5);
+        clickSearchButton();
+        //this.waitTillElementBeClickable(SEARCH_INIT_ELEMENT,"search is not clickable");
+        //this.waitForElementAndClick (SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 15);
         this.waitForElementPresent(SEARCH_INIT_ELEMENT, "Cannot find search input after clicking search init element");
     }
     public void waitForCancelButtonToAppear()
@@ -89,8 +90,8 @@ abstract public class SearchPageObject  extends MainPageObject{
     {
         this.assertElementNotPresent(SEARCH_RESULT_ELEMENT, "We supposed not to find any result");
     }
-    public void clickAuthButton() throws InterruptedException {
-        Thread.sleep(1000);
-        this.waitForElementAndClick(SEARCH_INIT_ELEMENT, "Cannot call auth menu", 10);
+    public void clickSearchButton() throws InterruptedException {
+        Thread.sleep(5000);
+        this.waitForElementAndClick(SEARCH_INIT_ELEMENT, "Cannot find search field", 10);
     }
 }
