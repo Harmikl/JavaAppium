@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwSearchPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/Platform.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/SearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/SearchPageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/mobile_web/MwSearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/mobile_web/MwSearchPageObject.class" afterDir="false" />
     </list>
