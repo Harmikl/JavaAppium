@@ -35,15 +35,14 @@ abstract public class SearchPageObject  extends MainPageObject{
     /*template methods*/
     public void initSearchInput () throws InterruptedException { //при заруске находит поиск, тапает по нужному элементу, и проверяет что инпут есть
 
-        //this.waitTillElementBeClickable(SEARCH_INIT_ELEMENT,"search is not clickable");
-        clickSearchButton();
-       // this.waitTillElementBeClickable(SEARCH_INIT_ELEMENT,"search is not clickable");
-        //this.waitForElementAndClick (SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 15);
+        this.waitTillElementBeClickable(SEARCH_INIT_ELEMENT,"search is not clickable");
+        //clickSearchButton();
+        this.waitForElementAndClick (SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 15);
         this.waitForElementPresent(SEARCH_INIT_ELEMENT, "Cannot find search input after clicking search init element");
     }
     public void waitForCancelButtonToAppear()
     {
-        this.waitForElementPresent(SEARCH_CANCEL_BUTTON,"cannot find search cancel button", 5);
+        this.waitTillElementBeClickable(SEARCH_CANCEL_BUTTON,"cannot find search cancel button");
     }
     public void waitForCancelButtonToDisappear()
     {
@@ -51,6 +50,7 @@ abstract public class SearchPageObject  extends MainPageObject{
     }
     public void clickCancelSearch()
     {
+        this.waitTillElementBeClickable(SEARCH_CANCEL_BUTTON,"Cancel button is not clickable");
         this.waitForElementAndClick(SEARCH_CANCEL_BUTTON,"Cannot find and click search cancel button",5);
     }
     public void typeSearchLine(String search_line)
@@ -93,7 +93,7 @@ abstract public class SearchPageObject  extends MainPageObject{
         this.assertElementNotPresent(SEARCH_RESULT_ELEMENT, "We supposed not to find any result");
     }
     public void clickSearchButton() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(9000);
         this.waitForElementAndClick(SEARCH_INIT_ELEMENT, "Cannot find search field", 10);
     }
 }

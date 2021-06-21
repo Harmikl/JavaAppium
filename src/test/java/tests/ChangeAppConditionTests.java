@@ -11,6 +11,9 @@ public class ChangeAppConditionTests extends CoreTestCase
 {
     @Test
     public void testChangesScreenOrientationOnSearchResults() throws InterruptedException{
+        if (Platform.getInstance().isMw()) {
+            return;
+        }
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
@@ -39,6 +42,9 @@ public class ChangeAppConditionTests extends CoreTestCase
     }
     @Test
     public void testCheckSearchArticleInBackground() throws InterruptedException{
+        if (Platform.getInstance().isMw()) {
+            return;
+        }
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();

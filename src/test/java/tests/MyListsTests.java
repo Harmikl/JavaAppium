@@ -6,17 +6,22 @@ import lib.ui.factories.ArticlePageObjectFactory;
 import lib.ui.factories.MyListsPageObjectFactory;
 import lib.ui.factories.NavigationUIFactory;
 import lib.ui.factories.SearchPageObjectFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MyListsTests extends CoreTestCase
 {
-private static final String name_of_folder = "Learning programming";
+private static final String
+        name_of_folder = "Learning programming",
+        login="Harmikl57",
+        password="23581321mhl";
+
     @Test
     public void testSaveFirstArticleToMyList()throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+        SearchPageObject.clickByArticleWithSubstring("bject-oriented programming language");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
@@ -24,7 +29,24 @@ private static final String name_of_folder = "Learning programming";
 
         if (Platform.getInstance().isAndroid()) {
             ArticlePageObject.addArticleToMyList(name_of_folder);
-        }else ArticlePageObject.addArticleToMySaved();
+        }else {
+            ArticlePageObject.addArticleToMySaved();
+        }
+
+        if (Platform.getInstance().isMw()){
+            AuthorizationPageObject Auth= new AuthorizationPageObject(driver);
+            Auth.clickAuthButton();
+            Auth.enterLoginData(login, password);
+            Auth.submitForm();
+
+            ArticlePageObject.waitForTitleElement();
+
+            assertEquals("We are not on the same page after login",
+                    article_title,
+                    ArticlePageObject.getArticleTitle());
+
+            //ArticlePageObject.addArticleToMySaved();
+        }
 
         ArticlePageObject.closeArticle();
 
@@ -33,6 +55,7 @@ private static final String name_of_folder = "Learning programming";
         }
 
         NavigationUI NavigationUI =  NavigationUIFactory.get(driver);
+        NavigationUI.openNavigation();
         NavigationUI.clickMyLists();
 
         MyListsPageObject MyListsPageObject =  MyListsPageObjectFactory.get(driver);
