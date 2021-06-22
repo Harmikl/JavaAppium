@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c093d2-bba6-4637-a07e-bf8fc94e8d17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lib/ui/AuthorizationPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwArticlePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwMyListPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwNavigationUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/Platform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/MyListsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/MyListsPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlePageObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlePageObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/factories/MyListsPageObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/factories/MyListsPageObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/factories/NavigationUIFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/factories/NavigationUIFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwSearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ChangeAppConditionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ChangeAppConditionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetStartedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetStartedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwMyListPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MwMyListPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MyListsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MyListsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/Platform.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/ArticlePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/ArticlePageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/MainPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/SearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/SearchPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/factories/ArticlePageObjectFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/factories/ArticlePageObjectFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/mobile_web/MwSearchPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/mobile_web/MwSearchPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ArticleTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ArticleTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +52,7 @@
     <property name="project.structure.side.proportion" value="0.32873562" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="JUnit.MyListsTests.testSaveFirstArticleToMyList">
+  <component name="RunManager" selected="JUnit.MyListsTests.testSaveTwoArticleToMyListEx5">
     <configuration name="ArticleTests.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppium" />
       <extension name="coverage">
@@ -127,6 +108,28 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.MyListsTests" />
       <option name="METHOD_NAME" value="testSaveFirstArticleToMyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="PLATFORM" value="mobile_web" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListsTests.testSaveTwoArticleToMyListEx5" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="JavaAppium" />
+      <selectedOptions>
+        <option name="module.classpath" />
+      </selectedOptions>
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTests" />
+      <option name="METHOD_NAME" value="testSaveTwoArticleToMyListEx5" />
       <option name="TEST_OBJECT" value="method" />
       <envs>
         <env name="PLATFORM" value="mobile_web" />
@@ -327,16 +330,17 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SearchTests" />
-      <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
-      <item itemvalue="JUnit.SearchTests.testSearch" />
-      <item itemvalue="JUnit.SearchTests.testCancelSearchEx3" />
       <item itemvalue="JUnit.SearchTests.testAmountOfNotEmptySearch" />
-      <item itemvalue="JUnit.SearchTests.testAmountOfEmptySearch" />
       <item itemvalue="JUnit.SearchTests.testCheckJavaWordInSearchResults" />
       <item itemvalue="JUnit.SearchTests.testFindMoreThan3TitleAndDescription" />
       <item itemvalue="JUnit.SearchTests.testFindMTitleAndDescriptionByJavaRequest" />
       <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
       <item itemvalue="JUnit.MyListsTests.testSaveFirstArticleToMyList" />
+      <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
+      <item itemvalue="JUnit.SearchTests.testSearch" />
+      <item itemvalue="JUnit.SearchTests.testCancelSearchEx3" />
+      <item itemvalue="JUnit.SearchTests.testAmountOfEmptySearch" />
+      <item itemvalue="JUnit.MyListsTests.testSaveTwoArticleToMyListEx5" />
     </list>
     <recent_temporary>
       <list>

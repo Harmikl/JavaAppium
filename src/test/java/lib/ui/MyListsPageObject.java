@@ -62,7 +62,7 @@ abstract public class MyListsPageObject extends MainPageObject {
         if (Platform.getInstance().isIOS()) {
             this.clickElementToTheRightUpperCorner(artical_xpath, "Cannot find saved article");
         } else {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
             String remove_locator= getRemoveButtonByTitle(article_title);
             this.waitForElementAndClick(
                     remove_locator,

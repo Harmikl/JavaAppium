@@ -42,6 +42,7 @@ abstract public class NavigationUI extends MainPageObject{
             );
         }else {
             this.tryClickElementWithFewAttempts(
+
                     MY_LIST_LINK,
                     "Cannot find 'My lists' icon",
                     5

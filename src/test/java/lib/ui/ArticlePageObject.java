@@ -136,13 +136,13 @@ abstract public class ArticlePageObject extends MainPageObject{
     }
     public void addArticleToMySaved() throws InterruptedException {
         if (Platform.getInstance().isMw()){
-            Thread.sleep(1000);
+            Thread.sleep(2000);
 
             removeArticleFromSavedIfItAdded();
         }
         this.waitForElementAndClick(OPTIONS_ADD_TO_MY_LIST_BUTTON,
                 "Cannot find option to add article to reading list",
-                5);
+                10);
 
     }
 

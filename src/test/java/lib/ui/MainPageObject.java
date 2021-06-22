@@ -207,11 +207,11 @@ public class MainPageObject {
         boolean need_more_attempts=true;
         while (need_more_attempts){
             try {
-                this.waitForElementAndClick(locator,error_message,1);
+                this.waitForElementAndClick(locator,error_message,3);
                 need_more_attempts=false;
             }catch (Exception e){
                 if (current_attempts>amount_of_attempts){
-                    this.waitForElementAndClick(locator,error_message,1);
+                    this.waitForElementAndClick(locator,error_message,3);
                 }
             }
             ++current_attempts;

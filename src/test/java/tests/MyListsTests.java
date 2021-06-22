@@ -44,8 +44,6 @@ private static final String
             assertEquals("We are not on the same page after login",
                     article_title,
                     ArticlePageObject.getArticleTitle());
-
-            //ArticlePageObject.addArticleToMySaved();
         }
 
         ArticlePageObject.closeArticle();
@@ -79,6 +77,18 @@ private static final String
             ArticlePageObject.addArticleToMyList(name_of_folder);
         } else ArticlePageObject.addArticleToMySaved();
 
+        if (Platform.getInstance().isMw()){
+            AuthorizationPageObject Auth= new AuthorizationPageObject(driver);
+            Auth.clickAuthButton();
+            Auth.enterLoginData(login, password);
+            Auth.submitForm();
+
+            ArticlePageObject.waitForTitleElement();
+
+            assertEquals("We are not on the same page after login",
+                    article_title,
+                    ArticlePageObject.getArticleTitle());
+        }
         ArticlePageObject.closeArticle();
 
         if (Platform.getInstance().isIOS()) {
@@ -86,10 +96,10 @@ private static final String
         }
 
         SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Linkin Park Diskography");
-        SearchPageObject.clickByArticleWithSubstring("Linkin Park discography");
+        SearchPageObject.typeSearchLine("Linkin Park Discography");
+        SearchPageObject.clickByArticleWithSubstring("Band discography");
 
-        if (Platform.getInstance().isAndroid()) {
+        if (Platform.getInstance().isAndroid()||Platform.getInstance().isMw()) {
             ArticlePageObject.waitForTitleElement();
         } else{
             ArticlePageObject.waitForTitleElement1();
@@ -107,6 +117,7 @@ private static final String
         }
 
         NavigationUI NavigationUI =  NavigationUIFactory.get(driver);
+        NavigationUI.openNavigation();
         NavigationUI.clickMyLists();
 
         MyListsPageObject MyListsPageObject =  MyListsPageObjectFactory.get(driver);
