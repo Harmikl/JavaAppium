@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="93c093d2-bba6-4637-a07e-bf8fc94e8d17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/environment.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.ArticleTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.ArticleTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.ArticleTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.ArticleTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ArticleTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ArticleTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

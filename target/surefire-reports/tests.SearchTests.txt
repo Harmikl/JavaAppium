@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: tests.SearchTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 84.83 s <<< FAILURE! - in tests.SearchTests
+testFindMTitleAndDescriptionByJavaRequest(tests.SearchTests)  Time elapsed: 18.825 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: cannot find title and descriptionJava
+ (tried for 10 second(s) with 500 milliseconds interval)
+	at tests.SearchTests.testFindMTitleAndDescriptionByJavaRequest(SearchTests.java:96)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //div[contains(@class,'wikidata-description')][contains(text(),'{SUBSTRING}')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'MacBook-Pro-MeskalitoS-2.local', ip: 'fe80:0:0:0:19:1fae:c628:fdd7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+	at tests.SearchTests.testFindMTitleAndDescriptionByJavaRequest(SearchTests.java:96)
+
+testCheckJavaWordInSearchResults(tests.SearchTests)  Time elapsed: 13.244 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed:  Cannot find item containers
+ (tried for 5 second(s) with 500 milliseconds interval)
+	at tests.SearchTests.testCheckJavaWordInSearchResults(SearchTests.java:64)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.id: org.wikipedia:id/page_list_item_container
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'MacBook-Pro-MeskalitoS-2.local', ip: 'fe80:0:0:0:19:1fae:c628:fdd7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+	at tests.SearchTests.testCheckJavaWordInSearchResults(SearchTests.java:64)
+
