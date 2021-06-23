@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -17,6 +18,8 @@ public class WelcomePageObject extends MainPageObject{
     {
         super(driver);
     }
+
+
     public void waitForLearnMoreLink ()
     {
         this.waitForElementPresent(STEP_MORE_LEARN_LINK, "Cannot find learn more about",10);
@@ -33,10 +36,12 @@ public class WelcomePageObject extends MainPageObject{
     {
         this.waitForElementPresent(STEP_LEARN_MORE_ABOUT_DATA_COLLECTED_LINK,"Cannot find 'Learn more about data collected' text", 10);
     }
+    @Step("Click next button")
     public void clickNextButton ()
     {
         this.waitForElementAndClick(NEXT_LINK, "Cannot find and click 'Next' button",10);
     }
+    @Step("Click get started button")
     public void clickGetStartedButton ()
     {
         this.waitForElementAndClick(GET_STARTED_BUTTON, "Cannot find and click 'Get started' button",10);

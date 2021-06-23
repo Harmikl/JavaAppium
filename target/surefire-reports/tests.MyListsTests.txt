@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: tests.SearchTests
+Test set: tests.MyListsTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.984 s - in tests.SearchTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.156 s - in tests.MyListsTests
