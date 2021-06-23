@@ -3,6 +3,7 @@ package tests;
 import lib.CoreTestCase;
 import lib.ui.SearchPageObject;
 import lib.ui.factories.SearchPageObjectFactory;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -36,7 +37,7 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.typeSearchLine(search_line);
         int amount_of_search_result = SearchPageObject.getAmountOfFoundArticles();
 
-        assertTrue(
+        Assert.assertTrue(
                 "We found few results",
                 amount_of_search_result > 0
         );
@@ -67,7 +68,7 @@ public class SearchTests extends CoreTestCase {
         SearchPageObject.waitForElementPresent(xpath_for_java_contains, "Cannot find java in containers", 10);
         List<WebElement> listOfElementsWithJava = driver.findElements(By.xpath("//*[contains(@text,'Java')]")); //находим количество xpath с текстом 'Java'
 
-        assertEquals(
+        Assert.assertEquals(
                 "List of containers is not equal to list of xpathes with 'Java' text",
                 listOfElementsWithItemContainers.size(),
                 listOfElementsWithJava.size()
@@ -81,7 +82,7 @@ public class SearchTests extends CoreTestCase {
             String search_line ="Java";
             SearchPageObject.typeSearchLine(search_line);
             int amount_of_titles_and_descriptions = SearchPageObject.getResultByTitleAndDescription();
-            assertTrue(
+            Assert.assertTrue(
                     "no one title and description by  request "+search_line,
                     amount_of_titles_and_descriptions>=3
             );

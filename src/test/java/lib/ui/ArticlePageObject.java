@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import io.qameta.allure.Step;
 import lib.Platform;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -23,16 +24,23 @@ abstract public class ArticlePageObject extends MainPageObject{
     {
         super(driver);
     }
+
+    @Step("Waiting for title on the article page")
     public WebElement waitForTitleElement() {
             return this.waitForElementPresent(TITLE, "cannot find article title on page", 15);
     }
+
+    @Step("Waiting for title on the article page with title 1")
     public WebElement waitForTitleElement1()
     {
         return this.waitForElementPresent(TITLE_1,"cannot find article 1 title on page",15);
     }
+
+    @Step("Get article title")
     public String getArticleTitle ()
     {
         WebElement title_element = waitForTitleElement();
+        screenshot(this.takeScreenshot("article_title"));
         if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
         }else if (Platform.getInstance().isIOS()){
@@ -41,6 +49,8 @@ abstract public class ArticlePageObject extends MainPageObject{
             return title_element.getText();
         }
     }
+
+    @Step("Get article title1")
     public String getArticleTitle1 ()
     {
         WebElement title_element = waitForTitleElement1();
@@ -50,6 +60,8 @@ abstract public class ArticlePageObject extends MainPageObject{
             return title_element.getAttribute("name");
         }
     }
+
+    @Step("Swipe to footer on article page")
     public void swipeToFooter()
     {
         if (Platform.getInstance().isAndroid()) {
@@ -70,6 +82,8 @@ abstract public class ArticlePageObject extends MainPageObject{
             );
         }
     }
+
+    @Step("Adding the article to my list")
     public void addArticleToMyList (String name_of_folder)
     {
         this.waitTillElementBeClickable(
@@ -110,6 +124,8 @@ abstract public class ArticlePageObject extends MainPageObject{
                 5
         );
     }
+
+    @Step("Adding article to my list second time")
     public void addArticleToMyListSecondTime (String name_of_folder)
     {
         this.waitTillElementBeClickable(
@@ -134,6 +150,8 @@ abstract public class ArticlePageObject extends MainPageObject{
         );
 
     }
+
+    @Step("Adding the article to my saved articles")
     public void addArticleToMySaved() throws InterruptedException {
         if (Platform.getInstance().isMw()){
             Thread.sleep(2000);
@@ -146,6 +164,7 @@ abstract public class ArticlePageObject extends MainPageObject{
 
     }
 
+    @Step("Removing the article from saved if it has been saved")
     public void removeArticleFromSavedIfItAdded()
     {
         if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)){
@@ -158,6 +177,8 @@ abstract public class ArticlePageObject extends MainPageObject{
             );
         }
     }
+
+    @Step("Closing the article")
     public void closeArticle()
     {
         if (Platform.getInstance().isIOS()||Platform.getInstance().isAndroid()){
@@ -170,6 +191,8 @@ abstract public class ArticlePageObject extends MainPageObject{
         }
 
     }
+
+    @Step("Tap cancel on search field")
     public void cancelOnSearchField()
     {
         this.waitForElementAndClick(
