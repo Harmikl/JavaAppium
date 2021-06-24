@@ -1,5 +1,9 @@
 package tests;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Features;
+import io.qameta.allure.Step;
+import io.qameta.allure.junit4.DisplayName;
 import lib.CoreTestCase;
 import lib.ui.*;
 import lib.ui.factories.ArticlePageObjectFactory;
@@ -63,6 +67,9 @@ private static final String
         MyListsPageObject.swipeByArticleToDelete(article_title);
     }
     @Test
+    @Features(value = {@Feature(value="Search"),@Feature(value="Article"),@Feature(value ="Authorization"),@Feature(value = "Navigation"),@Feature(value = "My lists")})
+    @DisplayName("Save to articles to my list")
+    @Step("Starting test testSaveTwoArticleToMyListEx5")
     public void testSaveTwoArticleToMyListEx5() throws InterruptedException{
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();

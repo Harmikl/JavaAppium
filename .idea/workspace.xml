@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c093d2-bba6-4637-a07e-bf8fc94e8d17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/navigation_screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article_title_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/article_title_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/navigation_screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/AuthorizationPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/AuthorizationPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/WelcomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MyListsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MyListsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/allure-results/environment.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/environment.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.SearchTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.SearchTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.SearchTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.SearchTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.MyListsTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tests.MyListsTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests.MyListsTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tests.MyListsTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/AuthorizationPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/AuthorizationPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/NavigationUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/NavigationUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/lib/ui/WelcomePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lib/ui/WelcomePageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/SearchTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/MyListsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/MyListsTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

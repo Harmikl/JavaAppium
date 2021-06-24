@@ -21,7 +21,7 @@ public class AuthorizationPageObject extends MainPageObject{
         this.waitForElementAndClick(LOGIN_BUTTON,"Cannot find and click auth button",5);
     }
 
-    @Step("Enter '{login}' and '{password}' ")
+    @Step("Enter '{login}' and password ")
     public void enterLoginData(String login, String password)
     {
         this.waitForElementAndSendKeys(LOGIN_INPUT,login,"Cannot find and put a login to the login input",5);
